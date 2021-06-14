@@ -1,0 +1,43 @@
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
+
+a:link{
+    margin-left: 2em;
+    color: #7856a3;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #46c6f5;
+    text-decoration: none;
+}
+
+a:hover{
+    color: inherit;
+    text-decoration: underline;
+    background: gray;
+}
+
+a:active{
+    color: gray;
+    text-decoration: underline;
+}
+
+h1{
+    font-size: large;
+    color: #7856a3;
+    text-shadow: 1px 1px 4px gray;
+}
+
+h2, h3{
+    color: black;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 4px gray;
+    width: max-content;
+    background: inherit;
+    padding: 0 1em;
+    border: 1px solid black;
+    border-radius: 20%;
+}
