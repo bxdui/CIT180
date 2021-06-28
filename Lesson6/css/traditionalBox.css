@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+	background: url("../media/mi-map.jpg");
+	background-size: cover;
+}
+
+header, footer{
+	width: inherit;
+	height: inherit;
+	text-align: center;
+}
+
+main{
+	width: 35%;
+	color: white;
+	margin: auto;
+}
+
+section{
+	margin: 1em;
+	padding: 1em;
+	border: 1px solid white;
+	background: gray;
+	text-align: center;
+}
+
+a:hover{
+	background-color: white;
+}

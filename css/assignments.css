@@ -3,9 +3,13 @@ body{
     font-size: 1.1em;
 }
 
-a:link{
+li{
     margin-left: 2em;
     color: #7856a3;
+}
+
+a:link{
+	color: #7856a3;
     text-decoration: none;
 }
 

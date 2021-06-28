@@ -1,0 +1,53 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: url("../media/bird-bkg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1{
+	color: white;
+	-webkit-text-stroke: 1px black;
+	margin: 1em;
+	margin-left: 5em;
+}
+
+section{
+	background: white;
+	border: 1px solid black;
+}
+
+a{
+	color: orange;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.sound, .video{
+	width: 50%;
+	margin: 1em;
+	padding: 1em;
+	padding-left: 3em;
+}
+
+.sound{
+	background: white url("../media/bird-sketch-bkg.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.video{
+	background: white url("../media/cockatoo-sketch-bkg.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
