@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Code Pro', monospace;
+	background-color: white;
+	color: beige;
+}
+
+h1{
+	position:relative;
+	width: 100%;
+	color: white;
+	margin: 1em auto;
+	text-align: center;
+	padding: 1.5em;
+	background: darkred;
+	border: 1px solid black;
+	animation:mymove 10s;
+   	animation-fill-mode:forwards;
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+form{
+	background: linear-gradient(45deg, #CBAC72 50%, white 50%);
+}
+
+article{
+	border: 2em double darkred;
+}
+
+fieldset{
+	width: 75%;
+	margin: 1em auto;
+	text-align: center;
+	background-color: darkred;
+}
+
+.inputButton{
+	transition: width 1s, height 1s, transform 1s;
+	transition-timing-function:ease-in;
+}
+
+.inputButton:hover{
+	width: 300px;
+	height: 90px;
+	color:black;
+	transform: rotate(360deg);
+}
+
+@keyframes mymove {
+    from {left: -30%;}
+    to {left: 0;}
+}
+
+@keyframes slidein {
+	from {
+	    margin-left:200%;
+	    width: 300%;
+	    }
+
+	to {
+	    margin-left: 0%;
+	    width: 100%;
+	    }
+}

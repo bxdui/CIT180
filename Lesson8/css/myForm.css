@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Code Pro', monospace;
+	background-color: white;
+	color: beige;
+}
+
+h1{
+	width: 100%;
+	color: white;
+	margin: 1em auto;
+	text-align: center;
+	padding: 1.5em;
+	background: darkred;
+	border: 1px solid black;
+}
+
+form{
+	background: linear-gradient(45deg, #CBAC72 50%, white 50%);
+}
+
+article{
+	border: 2em double darkred;
+}
+
+fieldset{
+	width: 75%;
+	margin: 1em auto;
+	text-align: center;
+	background-color: darkred;
+}

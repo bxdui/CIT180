@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+	background: url("../media/mi-map.jpg");
+	background-size: cover;
+}
+
+header, footer{
+	text-align: center;
+}
+
+h2, section p{
+	color: white;
+}
+
+.container{
+	width:100%;
+	display: flex;
+	overflow: auto;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+section{
+	width: 30%;
+	margin: auto;
+	margin-top: 1em;
+	padding: 1em;
+	border: 1px solid white;
+	background: gray;
+	text-align: center;
+}
+
+a:hover{
+	background-color: white;
+}

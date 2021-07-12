@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Pizza Order</title>
+<link rel="stylesheet" href="css/myFormAnimated.css">
+<link>
+
+</head>
+
+<body>
+  <h1>Pizza Order</h1>
+  <article>
+    <form name="confirmation" id="confirmation" action="https://lisabalbach.com/CIT180/Lesson8/FormProcessor.html" method="get" >
+      <input type="hidden" name="mailto" value="mailto:winkle20@mail.nmc.edu">
+      <fieldset class="center">
+        <h2>Items and Toppings</h2>
+          <div>
+            <table>
+              <tr>
+                <td><h3>Size</h3>
+                  <p>
+                  <label for="10">10"</label>
+                  <input type="radio" name="options" id="19-25" value="19-25" class="shortinputButton" />
+                  </p>
+
+                  <p>
+                  <label for="12">12"</label>
+                  <input type="radio" name="options" id="26-34" value="26-34" class="shortinputButton"/>
+                  </p>
+
+                  <p>
+                  <label for="14">14"</label>
+                  <input type="radio" name="options" id="35-44" value="35-44" class="shortinputButton"/>
+                  </p>
+
+                  <p>
+                  <label for="16">16"</label>
+                  <input type="radio" name="options" id="45-54" value="45-54" class="shortinputButton"/>
+                  </p>
+
+                  <p>
+                  <label for="18">18"</label>
+                  <input type="radio" name="options" id="55-64" value="55-64" class="shortinputButton"/>
+                  </p>
+
+                  <p>
+                  <label for="20">20"</label>
+                  <input type="radio" name="options" id="65+" value="65+" class="shortinputButton"/>
+                  </p>
+                </td>
+
+                <td><h3>Basic Toppings</h3>
+                  <p>
+                  <input type="checkbox" name="Boxes" id="pepperoni" value="pepperoni topping" class="shortinputButton">
+                  <label for="pepperoni">Pepperoni</label>
+                  </p>
+                  <p>
+                  <input type="checkbox" name="Boxes" id="mushroom" value="mushroom topping" class="shortinputButton">
+                  <label for="mushroom">Mushroom</label>
+                  </p>
+                  <p>
+                  <input type="checkbox" name="Boxes" id="banana-pepper" value="banana-pepper topping" class="shortinputButton">
+                  <label for="banana-pepper">Banana Pepper</label>
+                  </p>
+                  <p>
+                  <input type="checkbox" name="Boxes" id="jalepeno" value="jalepeno topping" class="shortinputButton">
+                  <label for="jalepeno">Jalepeno</label>
+                  </p>
+                  <p>
+                  <input type="checkbox" name="Boxes" id="pineapple" value="pineapple topping" class="shortinputButton">
+                  <label for="pineapple">Pineapple</label>
+                  </p>
+                </td>
+              </tr>
+            </table>
+        </div>
+      </fieldset>
+
+      <fieldset class="center">
+      <h2>Extras</h2>
+        <div>
+          <p>Please select any extras (hold CTRL and click to select multiple)</p>
+          <p>Extras:<br>
+            <select id="select1" name="select1" size="5" multiple="multiple">
+              <option value="Breadsticks">Breadsticks</option>
+              <option value="Drink">Drink</option>
+              <option value="Wings">Wings</option>
+              <option value="Breadstick Bites">Breadstick Bites</option>
+              <option value="Cookie">Cookie</option>
+              <option value="Salad">Salad</option>
+              <option value="Extra Sauce">Extra Sauce</option>
+            </select>
+          </p>
+
+          <p>Payment Type<br>
+            <input list="select2" id="payment-method" name="payment-method" placeholder="Please make a selection">
+            <datalist id="select2">
+              <option value="Credit"></option>
+              <option value="Debit"></option>
+              <option value="Cash on delivery"> </option>
+              <option value="Gift card"></option>
+            </datalist>
+          </p>
+        </div>
+      </fieldset>
+
+      <fieldset class="center">
+        <h2>Delivery Information:</h2>
+        <p>
+        <label for="name"  >Name:</label>
+        <input type="text" id="name" name="name" size="30"  required autofocus/>
+        <br />
+        </p>
+
+        <p>
+        <label for="address"  >Address:</label>
+        <input  type="text" id="address" name="address" size="50"  />
+        <br/>
+        </p>
+
+        <p>
+        <label for="city"  >City:</label>
+        <input type="text"  id="city" name="city" size="20"/>
+        </p>
+
+        <p>
+        <label for="state"  >State:</label>
+        <input type="text"  id="state" name="state" size="5" value="MI" />
+        </p>
+
+        <p>
+        <label for="zip"   >Zip:</label>
+        <input type="text"  id="zip" name="zip" size="10"/>
+        <br/>
+        </p>
+
+        <p>
+        <label for="telephone"  >Cell#:</label>
+        <input type="tel" id="telephone"  name="telephone" size="34"  placeholder="(989)275-5555" required/>
+        <br/>
+        </p>
+
+        <p>
+        <label for="Email"  >E-Mail Address:</label>
+        <input type="email" id="email"  name="email" size="50"  placeholder="name@yourisp.com" required/>
+        </p>
+      </fieldset>
+
+      <fieldset class="center">
+        <h2>Comments</h2>
+        <p>Please enter additional requests or information below:<br/>
+          <textarea rows="10" cols="50" id="TextArea" name="TextArea" wrap="soft"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" class="inputButton" value="Submit">
+          <input type="reset"  class="inputButton" value="Reset">
+        </p>
+      </fieldset>
+    </form>
+  </article>
+</body>
+</html>

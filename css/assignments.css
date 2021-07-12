@@ -1,11 +1,26 @@
-body{
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1.1em;
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
 }
 
-li{
-    margin-left: 2em;
-    color: #7856a3;
+body{
+    z-index: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    min-height:500px;
+    opacity: 0;
+    animation: fadein 1s 0.3s forwards;
+}
+
+article{
+    height: 125vh;
+}
+
+section .initial{
+    opacity: 0;
 }
 
 a:link{
@@ -18,7 +33,7 @@ a:visited{
     text-decoration: none;
 }
 
-a:hover{
+li a:hover{
     color: inherit;
     text-decoration: underline;
     background: gray;
@@ -30,18 +45,81 @@ a:active{
 }
 
 h1{
+    text-align: center;
+}
+
+h1, h2{
     font-size: large;
     color: #7856a3;
     text-shadow: 1px 1px 4px gray;
 }
 
-h2, h3{
-    color: black;
-    font-size: 1.2em;
-    text-shadow: 1px 1px 4px gray;
-    width: max-content;
-    background: inherit;
-    padding: 0 1em;
-    border: 1px solid black;
-    border-radius: 20%;
+section{
+    margin-left:15%;
+    max-width:600px;
+}
+
+nav {
+    margin-left:40px;
+    margin-top:0px;
+}
+nav ul li {
+    display:inline-table;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px 40px;
+    color:white;
+    text-decoration: none;
+}
+nav ul li:hover a {
+    color:black;
+    text-decoration: none;
+}
+nav ul li:hover > ul {
+    display:flex;
+    flex-direction:column;
+}
+nav ul ul {
+    background: white;
+    display: none;
+    padding: 0px;
+    position: absolute;
+    z-index:1;
+}
+nav ul ul li {
+    display:block;
+    border: 1px solid #7856a3;
+    position: relative;
+    text-align:left;
+}
+nav ul ul li a {
+    padding: 15px 40px;
+}
+nav ul ul li a:hover {
+    background: gray;
+}
+
+footer{
+    margin-top: -2em;
+    width: 100%;
+    position: fixed;
+}   
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #7856a3;
+    overflow: auto; /* Overflow due to float */
+    padding-bottom: 1.3em;
+}
+
+.icon-bar a{
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    height: 100%;
+    width: 25%; 
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
 }
