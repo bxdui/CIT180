@@ -1,0 +1,27 @@
+﻿*{
+    width:100%;
+    font-size:12pt;
+    font-family:sans-serif;
+    background:white;
+    color:black;
+    margin:0px;
+    display:block;
+    border:none;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+aside{
+    display:none;
+}
+
+nav ul li {
+    border:none;
+    margin:0;
+    text-decoration:underline;
+}
+
+p{
+    margin-top:10px;
+}
