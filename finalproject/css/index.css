@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@keyframes fadein{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	color: white;
+	background: #282424;
+	font-family: 'Quicksand', 'Tahoma', sans-serif;
+	max-width: 100vw;
+}
+
+header{
+	background: #282424 url("../media/gym.jpg") no-repeat center;
+	height: 60vh;
+	width: 100%;
+}
+
+header div{
+	top: 0;
+	position: sticky;
+}
+
+nav #main, a{
+	/* float: left; */
+	color: white;
+	text-decoration: none;
+}
+
+h1{
+	margin: 1em;
+}
+
+h3{
+	margin-top: 1em;
+}
+
+div{
+	flex:1;
+}
+
+#exercises-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 5em 1em;
+	max-width: 100vw;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #282424;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 16px;
+}
+
+#article-img, #exercise-img{
+	width: 15em;
+	height: 15em;
+	box-shadow: white 5px 5px;
+}
+
+article{
+	margin: auto;
+}
+
+#exercise-img{
+	margin: auto;
+}
+
+#exercise-desc{
+	margin: 10em;
+}
+
+#icon-bar{
+	width: 100%;
+}
+
+footer{
+	margin: auto;
+	padding: 1em;
+}
+
+footer a{
+	padding: 0.7em;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 751px){
+	#exercise-desc #exercise-img {
+		width: 100vw;
+		height: 100%;
+	}
+
+	#exercises-container{
+		display: block;
+	}
+
+	article{
+		width: 100vw;
+	}
+
+	p{
+		width: 100%;
+	}
+	header {background: #282424;}
+}
